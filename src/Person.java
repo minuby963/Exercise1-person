@@ -2,9 +2,14 @@
 public class Person {
 	private String name;
 	private int age;
-
+	
 	public Person() {
 
+	}
+
+	public Person(String name, int age) {
+		setName(name);
+		setAge(age);
 	}
 
 	@Override
@@ -26,6 +31,15 @@ public class Person {
 
 	public int getAge() {
 		return age;
+	}
+	
+	public Person getThisPersonWithOtherName(String newName){
+		return new Person(newName, age);
+	}
+	
+	public Person toUpperCase2(){
+		name = name.toUpperCase();
+		return this;
 	}
 
 }
