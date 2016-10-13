@@ -10,8 +10,7 @@ public class Exercise1Person {
 			System.out.println(p);
 		}
 		catch(Exception e){
-			System.out.println(e);
-			e.getMessage();//nie dzia³a
+			System.out.println(e.getMessage());
 		}
 		
 		try{
